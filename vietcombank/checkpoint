@@ -1,0 +1,2 @@
+model_checkpoint_path: "vietcombank.wgt"
+all_model_checkpoint_paths: "vietcombank.wgt"

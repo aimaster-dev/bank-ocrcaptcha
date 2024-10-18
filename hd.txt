@@ -1,0 +1,38 @@
+Cách train model giải captcha
+- Tải file train.ipynb lên https://colab.research.google.com/
+- run code theo từng block để tiến hành train
+- dataset ví dụ ở block 2 https://appnro.vn/viettel.zip, folder ảnh nén dạng zip, label data sẵn bắt buộc phải là kết quả.png
+- train xong thì lấy model bỏ vô code implement hoặc dựa trên example tự viết lại là dùng được.
+
+
+
+
+
+Cách chạy api giải captcha
+sudo yum install epel-release
+sudo yum install nodejs npm
+sudo npm install -g pm2
+tạo mục giaicaptcha ở folder home
+cd /home/giaicaptcha
+
+# Update và cài đặt thư viện
+
+sudo yum update
+sudo yum install python3-devel
+sudo yum groupinstall 'development tools'
+
+# Mở môi trường python
+python3 -m venv venv
+. venv/bin/activate
+pip install --upgrade pip
+
+# Cài đặt thư viện
+pip install flask
+pip install flask_cors
+pip install tensorflow // hoặc pip install --no-cache-dir tensorflow
+pip install numpy
+pip install matplotlib
+
+
+# deploy
+pm2 start app.py

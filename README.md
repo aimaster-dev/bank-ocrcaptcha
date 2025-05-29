@@ -16,7 +16,7 @@ This project is a deep learning-based OCR solution designed to automatically sol
    ```bash
    git clone https://github.com/your-repo/bank-captcha.git
    cd bank-captcha
-````
+   ````
 
 2. Install dependencies:
 
@@ -53,9 +53,6 @@ POST to one of the following endpoints with JSON body:
   "captcha": "smcm"
 }
 ```
-
-## Model Training
-
 Use the provided training script to preprocess data, define and train the model, and export it using JSON and weight files. Models can be reloaded using `LoadModel()`.
 
 ## License
